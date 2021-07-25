@@ -1,18 +1,21 @@
 package com.bridgelabz.cabinvoicegenerator;
 
-public class InvoiceSummary {
+public class InvoiceSummary
+{
 	public int noOfRides;
 	public double totalFare;
 	public double averageFare;
 
-	public InvoiceSummary(int noOfRides, double totalFare) {
+	public InvoiceSummary(int noOfRides, double totalFare)
+	{
 		this.noOfRides = noOfRides;
 		this.totalFare = totalFare;
 		this.averageFare = (this.totalFare) / (this.noOfRides);
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) 
+	{
 		if (this == obj)
 			return true;
 		if (obj == null || getClass() != obj.getClass())
